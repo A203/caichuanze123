@@ -1,0 +1,76 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:stretchColumns="1"
+    tools:context=".MainActivity">
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="性别:"
+            android:textSize="20sp"/>
+
+    <TextView
+        android:text="@string/hello_world"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <!-- 这里定义一组单选按钮 -->
+    <RadioGroup>
+        <RadioLayout
+            android:id="@+id/button01"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal" />
+        <!-- 定义两个单选按钮 -->
+        <RadioButton
+            android:id="@+id/boy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="男"
+            android:checked="true"
+            />
+        <RadioButton
+            android:id="@+id/gril"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="女"
+            />
+
+    </RadioGroup>
+    </TableRow>
+<TableRow>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="婚姻状态"
+        android:textSize="16sp"
+        />
+    <!-- 定义一个垂直的线性布局 -->
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <!-- 定义三个复选框 -->
+        <CheckBox android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已婚"
+            android:checked="true"
+            />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="未婚"
+            />
+    </LinearLayout>
+</TableRow>
+    <TextView
+        android:id="@+id/show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+</TableLayout>
